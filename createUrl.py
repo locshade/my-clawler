@@ -1,4 +1,4 @@
-#-*-coding=utf-8-*-
+#coding:utf-8
 import urllib.request
 import io
 import gzip
@@ -37,12 +37,12 @@ def get_page(url):
     charS=page.info().getparam('charset')
     return page.decode(charS,'ignore').encode('utf-8')
     '''
-    return gf.read().decode('gbk','ignore')
+    return gf.read().decode('utf-8')
 
 
 
-page=get_page('http://www.qq.com')
-p=r'href="(http:[^<>]+?\.htm)"'
+page=get_page('http://www.huanqiu.com/')
+p=r'href="(http:[^<>]+?\.html)"'
 result=re.findall(p,page)
 
 

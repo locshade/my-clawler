@@ -3,7 +3,7 @@ import urllib.request
 import io
 import gzip
 
-i=1
+i=180
 
 
 '''
@@ -46,7 +46,7 @@ url=file.readline()
 while(''!=url):
     html=get_page(url)
     name=url.split('.')[1]
-    save_file(html,name+'.html')
+    save_file(html)
     url=file.readline()
     print(name)
     print(url)
