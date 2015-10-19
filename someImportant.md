@@ -21,3 +21,6 @@ def url_open(url):
 ```python
 #coding:utf-8
 ```
+2：调试的过程中一直碰到的编码问题，这里是一个链接：
+
+[python处理字符串相关](http://my.oschina.net/leejun2005/blog/74430)
